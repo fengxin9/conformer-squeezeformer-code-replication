@@ -63,7 +63,7 @@ conformer2.0，3.0需要pytorch3.9以上环境，包括os pandas numpy torch等�
 3. 测试训练集：
   运行test_train_set.py：python test_train_set.py --checkpoint checkpoints/best_model.pth --sample_count 1000
   确保conf/config.yaml内data_path路径正确即可。
-  本命令只测试前一千条样本，全训练集共约12万条样本，可修改--sample_count 1000决定测试数目，不建议全部测试，最好量力而行。
+  本命令只测试前一千条样本，全训练集共约12万条样本，可修改--sample_count 1000决定测试数目。
 4. 测试验证集：
   运行test_dataset.py：python test_dataset.py --checkpoint checkpoints/best_model.pth --sample_count 50
   确保conf/config.yaml内data_path路径正确即可。
